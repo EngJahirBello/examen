@@ -1,0 +1,155 @@
+/* RESET BÁSICO */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+/* EL RECUADRO ROJO DEL PIZARRÓN */
+.pantalla-principal {
+    background-color: white;
+    border: 3px solid #c23b22; 
+    border-radius: 10px;
+    width: 900px;
+    min-height: 500px;
+    padding: 20px;
+    position: relative; /* Para que el botón 'Crea' se quede en la esquina */
+}
+
+h1 {
+    color: #c23b22;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* ESTO ES LO QUE ARREGLA TU IMAGEN: Separa el menú de las fotos */
+.contenedor-principal {
+    display: flex; 
+    gap: 30px;
+}
+
+/* MENÚ LATERAL */
+.menu-lateral {
+    width: 200px;
+    border-right: 2px solid #c23b22;
+}
+
+.menu-lateral ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-lateral a {
+    text-decoration: none;
+    color: #c23b22;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 15px;
+}
+
+/* TABLA DE PELÍCULAS */
+.tabla-peliculas table {
+    border-collapse: collapse;
+}
+
+.tabla-peliculas td {
+    border: 1px solid #c23b22;
+    padding: 5px;
+}
+
+.tabla-peliculas img {
+    display: block;
+}
+
+/* BOTÓN CREA (Esquina inferior derecha) */
+.boton-crea {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    border: 2px solid #c23b22;
+    padding: 5px 15px;
+    text-decoration: none;
+    color: #c23b22;
+    font-weight: bold;
+}
+/* RESET BÁSICO */
+* { box-sizing: border-box; }
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+}
+
+/* EL RECUADRO ROJO DEL PIZARRÓN */
+.pantalla-principal {
+    background-color: white;
+    border: 3px solid #c23d22; 
+    border-radius: 10px;
+    width: 950px;
+    min-height: 550px;
+    padding: 25px;
+    position: relative; /* Para los botones de las esquinas */
+}
+
+h1 { color: #c23d22; text-align: center; margin-bottom: 20px; }
+
+/* DISEÑO DE LA CARTELERA (Flexbox) */
+.contenedor-principal {
+    display: flex; 
+    gap: 30px;
+}
+
+.menu-lateral {
+    width: 200px;
+    border-right: 2px solid #c23d22;
+}
+
+.menu-lateral ul { list-style: none; padding: 0; }
+.menu-lateral a {
+    text-decoration: none;
+    color: #c23d22;
+    font-weight: bold;
+    display: block;
+    padding: 10px 0;
+}
+
+/* TABLA DE PELÍCULAS */
+.tabla-peliculas table { border-collapse: collapse; margin: 0 auto; }
+.tabla-peliculas td { border: 2px solid #c23d22; padding: 5px; }
+.tabla-peliculas img { display: block; }
+
+/* PÁGINAS DE PELÍCULAS (Lo que tenías en tu VS Code) */
+.contenido-pelicula {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.contenedor-video {
+    border: 2px solid #c23d22;
+    padding: 5px;
+    margin-bottom: 15px;
+}
+
+/* BOTONES (Inicio y Crea) */
+.boton-crea, .boton-inicio {
+    position: absolute;
+    bottom: 20px;
+    border: 2px solid #c23d22;
+    padding: 8px 15px;
+    text-decoration: none;
+    color: #c23d22;
+    font-weight: bold;
+}
+.boton-crea { right: 20px; }
+.boton-inicio { left: 20px; }
